@@ -1,0 +1,9 @@
+import BaseModule from '{{relativeJsDir}}/helpers/baseModule';
+
+export default class {{name.upperCamelCase}} extends BaseModule {
+  constructor(element) {
+    super(element, element.getAttribute('data-js-module'));
+
+    this.getElements([{ id: 'someElement', selector: 'some-element' }]);
+  }
+}

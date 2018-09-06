@@ -1,0 +1,24 @@
+{
+  "paths": {
+    "componentsDir": "./src/components/",
+    "javascriptsDir": "./src/javascripts/"
+  },
+  "hierarchy": [
+    {
+      "name": "atoms",
+      "prefix": "a"
+    },
+    {
+      "name": "molecules",
+      "prefix": "m"
+    },
+    {
+      "name": "organisms",
+      "prefix": "o"
+    },
+    {
+      "name": "templates",
+      "prefix": "t"
+    }
+  ]
+}
