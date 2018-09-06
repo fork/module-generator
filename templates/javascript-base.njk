@@ -1,11 +1,11 @@
-{% set pluralName = name.lowerCamelCase + "s" -%}
+{% set pluralName = moduleName.lowerCamelCase + "s" -%}
 
 import forEach from '{{relativeJsDir}}/dom/forEach';
 
 const {{pluralName}} = document.querySelectorAll('[data-js-module="{{moduleName.hyphensPrefixed}}"]');
 
 const init = async () => {
-  const { default: {{name.upperCamelCase}} } = await import(/* webpackChunkName: {{moduleName.hyphensPrefixed}} */ './{{moduleName.hyphens}}');
+  const { default: {{moduleName.upperCamelCase}} } = await import(/* webpackChunkName: {{moduleName.hyphensPrefixed}} */ './{{moduleName.hyphens}}');
 
   forEach({{moduleName.lowerCamelCase}}s, (index, element) => new {{moduleName.upperCamelCase}}(element));
 };
