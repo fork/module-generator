@@ -1,6 +1,6 @@
 {% raw %}{% macro render(options) %}{% endraw %}
-  <div class="{{name.hyphensPrefixed}}">
-    <div class="{{name.hyphensPrefixed}}__some-element"> 
+  <div class="{{moduleName.hyphensPrefixed}}" {%- if js %} data-js-module="{{ moduleName.hyphensPrefixed }}"{% endif %}>
+    <div class="{{moduleName.hyphensPrefixed}}__some-element" {%- if js %} data-js-element="{{ moduleName.hyphensPrefixed }}__some-element"{% endif %}> 
     </div>
   </div>
 {% raw %}{% endmacro %}{% endraw %}
