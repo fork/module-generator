@@ -7,7 +7,7 @@ A module generator for the [ui-pattern-library](https://github.com/fork/ui-patte
 Add package to dev-dependencies (Adjust to current release number)
 
 ```
-yarn add https://github.com/fork/module-generator.git#v0.0.2 -D
+yarn add https://github.com/fork/module-generator.git#v0.0.3 -D
 ```
 
 Run generator 
